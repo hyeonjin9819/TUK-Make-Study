@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace ="org.tukorea.study.mapper.StudyMapper">
+ 
+ 	<select id = "selectAll" resultType ="org.tukorea.study.domain.StudyVO">
+ 		select * from studylist_free
+ 	</select>
+ 	
+ 	<select id = "selectByNum" resultType="org.tukorea.study.domain.StudyVO">
+ 		select * from studylist_free where snum = #{snum}
+ 	</select>
+ 	
+ 	<insert id = "insert">
+ 		insert into studylist_free(sname, sobject, sowner, slocation) values
+ 		( #{sname}, #{sobject}, #{sowner}, #{slocation})
+ 	</insert>
+ 	
+ 	<update id ="update">
+ 		update studylist_free set sobject = #{sobject},  slocation =#{slocation} where snum =#{snum}
+ 	</update>
+ 	
+ 	<delete id ="delete">
+ 		delete from studylist_free where snum = #{snum}
+ 	</delete>
+ 	
+ 	
+  </mapper>

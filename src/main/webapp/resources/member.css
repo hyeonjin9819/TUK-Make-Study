@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+	header
+	{
+		margin:20px 10px 40px 10px; 
+		font-family:"Freestyle Script","Mistral";
+		font-size:50px;
+		text-align:center;
+	}
+	body {
+	    color: black;
+	    font-family: '맑은 고딕', '돋움', '고딕';
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+/* 	a {
+	 	margin : 0px 10px 0px 0px;
+	 	width : 100px;
+		height : 50px;
+		font-size: 25pt;
+		border-radius: 5px;
+	} */
+
+	th, td {
+		font-size: 20pt;
+		border: 1px solid rgb(255, 255, 255);
+		height: 40px;
+		padding: 70px;
+		color: #000000;
+		background-color: rgb(214, 222, 239);
+	}
+	
+	.center {
+		  display: flex;
+		  justify-content: center;
+		  height: 70px;
+		  background: #6610f2;
+	}
+	
+	input {
+        border-style:none;
+        border-bottom:solid 2px #000000;
+        border-collapse:collapse;
+        background-color: transparent;
+}
+
+
